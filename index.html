@@ -4,7 +4,66 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Blog Preview Card</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./output.css" />
     </head>
-    <body></body>
+    <body class="font-figtree bg-yellow-400 min-h-screen w-full">
+        <main class="h-screen w-full flex flex-col justify-center items-center">
+            <section
+                class="bg-white-50 max-w-96 rounded-2xl px-8 py-8 border border-black-950 flex flex-col gap-6 shadow-3xl shadow-black-950"
+            >
+                <!-- Image -->
+                <div>
+                    <img
+                        src="./blog-preview-card-main/assets/images/illustration-article.svg"
+                        class="w-full h-auto rounded-2xl"
+                        alt=""
+                    />
+                </div>
+                <!-- Content -->
+                <div class="flex flex-col gap-4">
+                    <!-- Info -->
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="bg-yellow-300 max-w-min px-2 py-1 rounded-md font-bold text-sm"
+                        >
+                            Learning
+                        </p>
+                        <p class="font-normal text-sm text-black-800">
+                            Published 21 Dec 2023
+                        </p>
+                    </div>
+
+                    <!-- Main -->
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-4">
+                            <h3
+                                class="text-2xl font-bold hover:text-yellow-300"
+                            >
+                                HTML & CSS foundations
+                            </h3>
+                            <p class="text-black-400 text-md">
+                                These languages are the backbone of every
+                                website, defining structure, content, and
+                                presentation.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="./blog-preview-card-main/assets/images/image-avatar.webp"
+                                class="w-8"
+                                alt=""
+                            />
+                            <p class="font-bold">Grep Hooper</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
